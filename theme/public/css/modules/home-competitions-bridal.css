@@ -1,0 +1,42 @@
+.difCompetitions,
+.difBridal {
+	flex-basis: 45%;
+	padding: 0 2rem;
+	color: white;
+}
+.difCompetitions h3,
+.difBridal h3 {
+	margin: 0 0 0.5rem 0;
+	font-size: 4.25rem !important;
+	text-align: center;
+	color: white !important;
+	text-shadow: 2px 2px 1px #424242;
+}
+.difCompetitions div,
+.difBridal div {
+	position: relative;
+	min-height: 500px;
+	padding: 10rem 2rem 2rem 2rem;
+}
+.difCompetitions div:before,
+.difBridal div:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url('http://difdev.com/glow/wp-content/uploads/2017/08/pink-blue-background.png');
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.difBridal div:before {
+	transform: scaleX(-1);
+}
+.difCompetitions div p,
+.difBridal div p {
+	position: relative;
+}
