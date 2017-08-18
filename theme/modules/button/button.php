@@ -1,10 +1,10 @@
-<?php namespace DIFDesign\theme\modules\button;
+<?php namespace InitialD\theme\modules\button;
 
-class Button extends DIFDesign\theme\modules\Module
+class Button extends InitialD\theme\modules\Module
 {
     public function init()
     {
-        add_shortcode( 'DIFDesign-button', $this->run );
+        add_shortcode( 'InitialD-button', $this->run );
     }
     public function run( $atts = [], $content = null, $tag = '' )
     {

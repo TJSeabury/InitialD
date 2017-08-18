@@ -1,4 +1,4 @@
-<?php namespace DIFDesign\interfaces;
+<?php namespace InitialD\interfaces;
 
 /*
 * Enables ajax for getting shortcodes dynamically

@@ -1,10 +1,10 @@
-<?php namespace DIFDesign\theme\modules\box;
+<?php namespace InitialD\theme\modules\box;
 
-class Box extends DIFDesign\theme\modules\Module
+class Box extends InitialD\theme\modules\Module
 {
     public function init()
     {
-        add_shortcode( 'DIFDesign-box', 'mugen_button_shortcode' );
+        add_shortcode( 'InitialD-box', 'mugen_button_shortcode' );
     }
     public function run( $atts = [], $content = null, $tag = '' )
     {

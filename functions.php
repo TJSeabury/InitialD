@@ -1,6 +1,6 @@
-<?php namespace DIFDesign;
+<?php namespace InitialD;
 
-define( 'DIFDESIGNTHEMEROOT', get_stylesheet_directory_uri() );
+define( 'InitialDTHEMEROOT', get_stylesheet_directory_uri() );
 
 /*
 * Lazy load classes for brevity.
@@ -9,7 +9,7 @@ define( 'DIFDESIGNTHEMEROOT', get_stylesheet_directory_uri() );
 */
 spl_autoload_register( function ( $class )
 {
-    $prefix = 'DIFDesign\\';
+    $prefix = 'InitialD\\';
     $base_dir = __DIR__ . '/';
     $len = strlen( $prefix );
     if ( strncmp( $prefix, $class, $len ) !== 0 )
@@ -27,27 +27,27 @@ spl_autoload_register( function ( $class )
 /*
 * Instantiate and setup child theme.
 */
-$difdesign = new Difdesign(
+$Theme = new InitialD(
 	__DIR__,
-	DIFDESIGNTHEMEROOT,
+	InitialDTHEMEROOT,
 	time()
 );
 
-$difdesign->initAdmin();
+$Theme->initAdmin();
 
-$difdesign->initStyles(
+$Theme->initStyles(
 	'/public/css/modules/',
 	'/public/css/',
 	'aggregate.min.css'
 );
 
-$difdesign->initScripts();
+$Theme->initScripts();
 
 
 /*
 * Enable modules based on theme options.
 */
-if ( (bool)get_option('difdesign_interface_ajax_shortcodes') )
+if ( (bool)get_option('InitialD_interface_ajax_shortcodes') )
 {
 	interfaces\AjaxShortcodes::enable();
 }

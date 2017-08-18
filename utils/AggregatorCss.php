@@ -1,4 +1,4 @@
-<?php namespace DIFDesign\utils;
+<?php namespace InitialD\utils;
 
 final class AggregatorCss
 {

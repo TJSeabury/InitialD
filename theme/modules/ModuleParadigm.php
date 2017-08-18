@@ -1,4 +1,4 @@
-<?php namespace DIFDesign\theme\modules;
+<?php namespace InitialD\theme\modules;
 
 interface ModuleParadigm
 {
